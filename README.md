@@ -10,7 +10,8 @@ Makefile to compile a project for PB071 course(single binary, single file)
 Author: Tomas Jasek
 
 Variables: 
+
 |Name|Description|
 |:-----:|:----------------------|
- | `project ` |  Name of project. This makefile uses it also for binary name, name of obj file and name of main c file | 
+| `project ` |  Name of project. This makefile uses it also for binary name, name of obj file and name of main c file |
 

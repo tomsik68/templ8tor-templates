@@ -24,13 +24,13 @@ for FILE in $FILES; do
 				else
 					VARNAME=`echo "$LINE" | sed s':-.*::g'`
 					VARDESC=`echo "$LINE" | sed s':.*-::g'`
-					VARIABLES="$VARIABLES | \`$VARNAME\` | $VARDESC | \n"
+					VARIABLES="$VARIABLES| \`$VARNAME\` | $VARDESC |\n"
 				fi
 				;;
 			esac
 		done < $FILE
 		echo -e "$DESC\n" >> README.md
 		echo -e "$AUTHOR\n" >> README.md
-		echo -e "Variables: \n$VARIABLES" >> README.md
+		echo -e "Variables: \n\n$VARIABLES" >> README.md
 	done
 	IFS=$BACKUPIFS
