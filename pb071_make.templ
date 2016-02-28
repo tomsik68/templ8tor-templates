@@ -6,7 +6,7 @@ project - Name of project. This makefile uses it also for binary name, name of o
 -->
 PROJECT := ${project}
 OBJECTS := $(PROJECT).o
-CFLAGS := -std=c99 -Wall -Wextra -pedantic
+CFLAGS := -std=c99 -Wall -Wextra -pedantic -g
 
 $(PROJECT): $(OBJECTS)
 	gcc $(CFLAGS) -o $(PROJECT) $(OBJECTS)
